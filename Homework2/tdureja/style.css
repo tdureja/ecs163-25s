@@ -1,0 +1,62 @@
+#dashboard {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #left-column {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  #right-column {
+    flex: 1.5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: visible;
+    max-width: none;
+  }
+  
+
+  #view1 {
+    width: 100%;
+    overflow: visible;
+    margin-left: -120px; 
+
+  }
+  
+  #view2 svg,
+  #view3 svg {
+    width: 100%;
+    height: auto;
+  }
+
+  #view2 {
+
+    overflow: visible;
+    margin-top: -60px;
+  }
+
+  #view3,
+  #view3 svg {
+    overflow: visible;
+  }
+  
+
+  #view3 text {
+    font-size: 10px;
+  }
+
+  #dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;       
+    align-items: flex-start;
+  }
+
+ h1 {
+    text-align: center;
+}
