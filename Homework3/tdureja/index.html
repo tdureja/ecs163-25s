@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Global Terrorism Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Global Terrorism Dashboard</h1>
+
+  <div id="dashboard">
+    <div id="left-column">
+      <!-- Year range display  -->
+      <p id="selected-range" style="margin-left: 70px; font-weight: bold;"></p>
+
+      <!-- Line chart view -->
+      <div id="view1"></div>
+    </div>
+
+    <div id="right-column">
+      <!-- Dropdown for bar chart -->
+      <div id="bar-controls" style="margin-bottom: 10px;">
+        <label for="sortOrder"><strong>Sort By:</strong></label>
+        <select id="sortOrder">
+          <option value="descending">Deaths Descending</option>
+          <option value="ascending">Deaths Ascending</option>
+          <option value="alpha">Alphabetical</option>
+        </select>
+      </div>
+
+      <!-- Bar chart and chord diagram -->
+      <div id="view2"></div>
+      <div id="view3"></div>
+    </div>
+  </div>
+
+  <!-- Tooltip (used by bar chart) -->
+  <div id="tooltip" style="position: absolute; display: none; background: white; padding: 5px; border: 1px solid black; pointer-events: none;"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
